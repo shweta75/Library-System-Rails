@@ -1,0 +1,118 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+en:
+ header:
+   dxc_first_rails_application: "DXC First Rails Application"
+   english: "English"
+   new_person: "New Person"
+   people_list: "People List"
+   items_list: "Items List"
+   live_messages: "LIVE Messages"
+   home: "Home"
+   sign_out: "Sign Out"
+   sign_in: "Sign In"
+   sign_up: "Sign Up"
+   russian: "Russian"
+ 
+ items:
+   items: "Items"
+   download_as_excel: "Download as Excel"
+   download_as_csv: "Download as CSV"
+   download_as_pdf: "Download as PDF"
+   upload_from_excel: "Upload From Excel"
+   new_item: "New Item"
+   isbn: "Isbn"
+   title: "Title"
+   description: "Description"
+   author: "Author"
+   editing_item: "Editing Item"
+   new_book: "New Book" 
+
+   forms:
+    isbn: "Isbn"
+    title: "Title"
+    description: "Description"
+    author: "Author"
+    
+ global:
+   show: "Show"
+   edit: "Edit"
+   destroy: "Destroy"
+   are_you_sure: "Are you sure?"
+   back: "Back"
+   message: "Message"
+   central_library: "Central Library"
+   prohibited_this_item_from_being_saved: "prohibited this item from being saved:"
+   forms:
+     submit: "Submit"
+ 
+ items_imports:
+   import_items_from_excel: "Import Items From Excel"
+   note_only_spreadsheets: "Note: Only import spreadsheets that were previously downloaded from this application."
+   requirements: "Requirements"
+   here_you_could: "Here you could list the validations you have in place for your model"
+   that_way_your_user: "That way your user has a better chance of successful import"
+   select_file: "Select File"
+   import_file: "Import File"
+   download_sample_excel: "Download Sample Excel"
+   file: "File"
+   errors:
+     prevented_us: "prevented us from
+     importing your spreadsheet. Please update your spreadsheet and try agin."
+ 
+ students:
+   people: "People"
+   first_name: "First Name"
+   last_name: "Last Name"
+   email: "Email"
+   age: "Age"
+   gender: "Gender"
+   year_of_birth: "Year Of Birth"
+   address: "Address"
+   fathers_name: "Fathers Name"
+   mothers_name: "Mothers Name"
+   editing_person: "Editing Person"
+   new_person: "New Person"
+   showing_the_details: "Showing the details of:"
+   student_list: "Student List"
+   errors:
+     prohibited_this_person: "prohibited this person from being saved:"
+   people_listing:
+     first_name: "First Name"
+     last_name: "Last Name"
+     email: "Email"
+     age: "Age"
+     gender: "Gender"
+ 
+ search:
+   search: "Search"
+   search_for: "Search for:"

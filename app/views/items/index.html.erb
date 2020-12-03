@@ -1,0 +1,46 @@
+<div class="items_list">
+
+<p id="notice"><%= notice %></p>
+    <h1><%= t('global.central_library') %></h1>
+</div>
+
+<% if @items.size > 0 %>
+   <%= link_to t('items.download_as_excel'), items_path(format: :xlsx), class: "btn btn-info" %>
+   <%= link_to t('items.download_as_csv'), items_path(format: :csv), class: "btn btn-info" %>
+   <%= link_to t('items.download_as_pdf'), items_path(format: :pdf), class: "btn btn-info" %>
+ <% end %>
+ <%= link_to t('items.upload_from_excel'), new_items_import_path, class: "btn btn-info" %>
+ <%= link_to t('items.new_book'), new_item_path, class: "btn btn-info" %>
+   
+<table class="items_table table table-dark">
+  <thead>
+    <tr>
+      <th><%= t('items.isbn')%></th>
+      <th><%= t('items.title')%></th>
+      <th><%= t('items.description')%></th>
+      <th><%= t('items.author')%></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  
+
+  <tbody>
+    <% @items.each do |item| %>
+      <tr>
+        <td><%= item.isbn %></td>
+        <td><%= item.title %></td>
+        <td><%= item.description %></td>
+        <td><%= item.author %></td>
+        <!-- %=
+        <td><%= link_to 'Show', item, class: "btn btn-info" %></td>
+        <td><%= link_to 'Edit', edit_item_path(item), class: "btn btn-info" %></td>
+        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } , class: "btn btn-danger"%></td>
+       % --> 
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%# <%= link_to 'New Item', new_item_path %> 

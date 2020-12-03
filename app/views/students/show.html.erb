@@ -1,0 +1,45 @@
+<div class="stud_show">
+<p id="notice"><%= notice %></p>
+<p>
+  <strong><%= t('students.first_name')%>:</strong>
+  <%= @student.first_name %>
+</p>
+
+<p>
+  <strong><%= t('students.last_name')%>:</strong>
+  <%= @student.last_name %>
+</p>
+
+<p>
+  <strong><%= t('students.year_of_birth')%>:</strong>
+  <%= @student.year_of_birth %>
+</p>
+
+<p>
+  <strong><%= t('students.gender')%>:</strong>
+  <%= @student.gender %>
+</p>
+
+<p>
+  <strong><%= t('students.address')%>:</strong>
+  <%= @student.address %>
+</p>
+
+<p>
+  <strong><%= t('students.fathers_name')%>:</strong>
+  <%= @student.fathers_name %>
+</p>
+
+<p>
+  <strong><%= t('students.mothers_name')%>:</strong>
+  <%= @student.mothers_name %>
+</p>
+
+<p>
+  <strong><%= t('students.email')%>:</strong>
+  <%= @student.email %>
+</p>
+
+<%= link_to t('global.edit'), edit_student_path(@student),class: "card-link", class: "btn btn-info" %> |
+<%= link_to t('global.back'), students_path ,class: "card-link", class: "btn btn-info"%>
+</div>

@@ -1,0 +1,32 @@
+<div class="container">
+  <div style="margin-top: 10px;">
+    <% flash.each do |key, value| %>
+      <div class="<%= flash_class(key) %>">
+        <%= value %>
+      </div>
+    <% end %>
+  </div>
+  <div class="header_container">
+    <% if current_user %>
+
+      <!-- %=
+       <%= link_to 'New Person', new_person_path, class: "btn btn-primary" %> 
+       <%= link_to "People List", root_path, class: "btn btn-primary" %> 
+
+ % --> 
+        <%= link_to t("header.home"), root_path, class: "btn btn-info" %> 
+        <%= link_to t("header.new_book"), new_book_path, class: "btn btn-info" %>
+        <%= link_to t("header.live_messages"), messages_path, class: "btn btn-info" %>
+        <%= link_to t("header.students_list"), students_path, class: "btn btn-info" %>
+        <%= link_to t("header.books_list"), items_path, class: "btn btn-info" %>
+        <%= link_to t("header.sign_out"), destroy_user_session_path, method: :delete, class: "btn btn-danger" %>
+
+           <% else %>
+      <%= link_to t("header.sign_in"), new_user_session_path, class: "btn btn-info" %>
+      <%= link_to t("header.sign_up"), new_user_registration_path, class: "btn btn-info" %>
+    <% end %>
+      <%= link_to t('header.russian'), root_path(locale: :ru), class: "btn btn-primary" %>
+      <%= link_to t('header.english'), root_path(locale: :en), class: "btn btn-primary" %>
+
+  </div>
+</div>

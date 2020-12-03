@@ -1,0 +1,8 @@
+<div class="container hr">
+  <h1>Editing Person</h1>
+  <p></p>
+  <%= link_to 'Show', @person, class: "btn btn-info" %> |
+  <%= link_to 'Back', people_path, class: "btn btn-info"  %>
+  <p></p>
+  <%= render 'form', person: @person %>
+</div>

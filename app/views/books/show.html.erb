@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t('forms.isbn')%>:</strong>
+  <%= @book.isbn %>
+</p>
+
+<p>
+  <strong><%= t('forms.title')%>:</strong>
+  <%= @book.title %>
+</p>
+
+<p>
+  <strong><%= t('forms.description')%>:</strong>
+  <%= @book.description %>
+</p>
+
+<p>
+  <strong><%= t('forms.author')%>:</strong>
+  <%= @book.author %>
+</p>
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>

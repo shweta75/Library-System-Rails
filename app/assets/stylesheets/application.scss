@@ -1,0 +1,105 @@
+@import "bootstrap";
+
+.header_container{
+  text-align: right;
+  margin-top: 10px;
+}
+
+.hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid black;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.footer_hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid black;
+  margin: 140em 0 0 0;
+  padding: 0;
+}
+
+.stud_list{
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+}
+
+.sign_up{
+  text-align: center;
+}
+
+.container_hr{
+  text-align: center;
+
+}
+
+.card{
+    margin: 0 auto; 
+    // float: none; 
+    margin-bottom: 10px;
+    opacity: .9;
+    height: 260px;
+
+}
+
+.new_stud{
+  text-align: center;
+}
+
+.stud_show{
+  text-align: center;
+
+}
+
+.stud_edit{
+  text-align: center;
+
+}
+
+.signin-container{
+  display: inline-table
+  
+}
+
+.items_table{
+  margin-top: 20px;
+}
+
+
+
+.items_list{
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+mark {
+  background-color:  #f7b882;
+  color: black;
+}
+
+
+.books_list{
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+}
+
+.msg{
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.btn-primary { background-color: #0c0b0a; }
+
+// .body {
+//   background: red;
+// }

@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+<div class="container hr">
+  <div class="books_table">
+    <%= render partial: "search/search_form" %>
+
+    <h1><%= t('global.central_library') %></h1>
+    <%= render partial: "books_listing" %>
+  </div>
+</div>
+

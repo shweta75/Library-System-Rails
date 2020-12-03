@@ -1,0 +1,10 @@
+<div class="container hr">
+  <%= javascript_pack_tag 'people' %>
+
+  <div class="people_new">
+    <h1>New Person</h1>
+    <%= link_to 'Back', people_path, class: "btn btn-info" %>
+    <p></p>
+    <%= render 'form', person: @person %>
+  </div>
+</div>

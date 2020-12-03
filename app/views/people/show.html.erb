@@ -1,0 +1,32 @@
+<div class="container hr">
+  <p id="notice"><%= notice %></p>
+
+  <h2>Showing the details of: <%= @name %></h2>
+  <%= link_to 'Edit', edit_person_path(@person), class: "btn btn-info" %> |
+  <%= link_to 'Back', people_path, class: "btn btn-info" %>
+  <p></p>
+  <p>
+    <strong>First name:</strong>
+    <%= @person.first_name %>
+  </p>
+
+  <p>
+    <strong>Last name:</strong>
+    <%= @person.last_name %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= @person.email %>
+  </p>
+
+  <p>
+    <strong>Age:</strong>
+    <%= @person.age %>
+  </p>
+
+  <p>
+    <strong>Gender:</strong>
+    <%= @person.gender %>
+  </p>
+</div>

@@ -1,0 +1,57 @@
+<%= form_with(model: student, local: true) do |form| %>
+  <% if student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(student.errors.count, "error") %> prohibited this student from being saved:</h2>
+
+      <ul>
+        <% student.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label t('students.first_name') %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label t('students.last_name') %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label t('students.year_of_birth') %>
+    <%= form.number_field :year_of_birth %>
+  </div>
+
+  <div class="field">
+    <%= form.label t('students.gender') %>
+    <%= form.text_field :gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label t('students.address') %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= form.label t('students.fathers_name') %>
+    <%= form.text_field :fathers_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label t('students.mothers_name') %>
+    <%= form.text_field :mothers_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label t('students.email') %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

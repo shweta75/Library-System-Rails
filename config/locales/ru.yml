@@ -1,0 +1,118 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+ru:
+  header:
+    dxc_first_rails_application: "Приложение DXC First Rails"
+    russian: "русский"
+    new_book: "Новый человек"
+    students_list: "Список людей"
+    books_list: "Список предметов"
+    live_messages: "ЖИВЫЕ сообщения"
+    home: "Дом"
+    sign_out: "Выход"
+    sign_in: "Войти в систему"
+    sign_up: "Подписаться"
+    english: "English"
+
+  items:
+    items: "Предметы"
+    download_as_excel: "Скачать как Excel"
+    download_as_csv: "Скачать как CSV"
+    download_as_pdf: "Скачать как PDF"
+    upload_from_excel: "Загрузить из Excel"
+    new_book: "Новый предмет"
+    isbn: "название"
+    title: "Количество"
+    description: "Подписаться"
+    author: "название"
+    back: "назад"
+
+    editing_item: "Редактирование элемента"
+    forms:
+      isbn: "название"
+      title: "количество"
+      description: "Подписаться"
+      author: "название"
+
+  global:
+    show: "Шоу"
+    edit: "редактировать"
+    destroy: "Уничтожить"
+    are_you_sure: "Ты уверен?"
+    back: "Назад"
+    message: "сообщения"
+    central_library: "центральный библиотека"
+    prohibited_this_item_from_being_saved: "запретил сохранение этого предмета:"
+    forms:
+      submit: "представить"
+
+  items_imports:
+    import_items_from_excel: "Импортировать элементы из Excel"
+    note_only_spreadsheets: "Примечание. Импортируйте только таблицы, которые были ранее загружены из этого приложения."
+    requirements: "Требования"
+    here_you_could: "Здесь вы можете перечислить проверки, которые у вас есть для вашей модели."
+    that_way_your_user: "Таким образом, у вашего пользователя будет больше шансов на успешный импорт"
+    select_file: "Выберите файл"
+    import_file: "Импортировать файл"
+    download_sample_excel: "Скачать образец Excel"
+    file: "файл"
+    errors:
+      prevented_us: "помешал нам импортировать вашу таблицу. Обновите таблицу и попробуйте еще раз."
+
+  students:
+    students: "люди"
+    first_name: "имя"
+    last_name: "фамилия"
+    year_of_birth: "Возраст"
+    gender: "Пол"
+    address: "адрес"
+    fathers_name: "имя Отца"
+    mothers_name: "имя матери"
+    email: "электронное письмо"
+    student_list: "студент список"    
+    editing_person: "Редактор"
+    new_student: "Новый человек"
+    showing_the_details: "Отображение деталей:"
+
+    
+    errors:
+      prohibited_this_person: "запретил этому человеку спасти:"
+    people_listing:
+      first_name: "Имя"
+      last_name: "Фамилия"
+      email: "Электронное письмо"
+      age: "Возраст"
+      gender: "Пол"
+
+  search:
+    search: "Поиск"
+    search_for: "Ищи:"
